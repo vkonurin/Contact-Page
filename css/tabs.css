@@ -1,0 +1,50 @@
+ul.tabNavigation {
+    list-style: none;
+    width: 100%;
+    height: 40px;
+}
+
+ul.tabNavigation li {display: block;float: left;}
+
+ul.tabNavigation li a {
+    padding: 11px 29px;
+    background-color: #f7f7f7;
+    color: #a3a2a2;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #eeeeee;
+    transition: 0.3s;
+}
+
+ul.tabNavigation li a.selected,
+ul.tabNavigation li a.selected:hover {
+    background: #FFF;
+    color: #484747;
+    border-bottom: 1px solid transparent;
+}
+
+ul.tabNavigation li a:hover {
+    background: #ccc;
+    color: #484747;
+}
+
+ul.tabNavigation li a:focus {
+    outline: 0;
+}
+
+div.tabs>div {
+    padding: 21px 20px 0 14px;
+    margin-top: 3px;
+    border: 1px solid #eeeeee;
+    background: #FFF;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+div.tabs div h2 {
+    margin-top: 0;
+}
