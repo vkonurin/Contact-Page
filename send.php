@@ -1,4 +1,5 @@
  ​<?php
+
     $name = $_POST['name'];
     $tel = $_POST['tel'];
     $typerequest = $_POST['typerequest'];
@@ -15,7 +16,7 @@
             $subject = "From the site visitor";
             $text =  "Written by: $name\n Phone: $tel\nType request: $typerequest\nWebsite: $website\nTheme subject: $subject_theme\nE-mail: $email\nText of the letter: $message\n";
 
-            $header = "Content-type: text/html;\r\n";
+            $header = "Content-type: text/html; charset=utf-8\r\n";
             $header .= "MIME-Version: 1.0\r\n";
 
             $sending = mail($to, $subject, $text, $headers);
