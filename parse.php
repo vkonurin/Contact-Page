@@ -27,7 +27,7 @@ $result_parse = mysql_query("SELECT * FROM mew");
     echo '</thead>';
     echo '<tbody>';
 
-     
+
     while($row = mysql_fetch_array($result_parse)){
       echo '<tr>';
       echo '<td>' . $row['name'] . '</td>';
