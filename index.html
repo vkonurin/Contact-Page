@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/theme_default_validate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/theme_default_validate.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/jquery.formstyler.css">
@@ -82,12 +82,12 @@
                     </ul>
 
                     <div id="first">
-                        <form class="row" id="feedback-form" action="">
+                        <form class="row" id="feedback-form">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 left_inputs">
                                 <input type="text" name="name" required="" value="" id="name" placeholder="Name">
-                                <input type="tel" name="tel" required="" value="" id="tel" pattern="(\+?\d[- .]*){7,13})" placeholder="Phone">
+                                <input type="tel" name="tel" required="" value="" id="tel" pattern="^([0|\+[0-9]{1,5})?([1-9][0-9]{9})$" placeholder="Phone">
                                 <select required="" name="typerequest"  id="typerequest" >
-                                    <option></option>
+                                    <options disabled value="">type of request</option>
                                     <option value="type request 1">type request 1</option>
                                     <option value="type request 2">type request 2</option>
                                     <option value="type request 3">type request 3</option>
@@ -164,7 +164,7 @@
 <script type="text/javascript">
 setTimeout(function() {
 $('#typerequest').styler({
-    selectPlaceholder: 'Type of request'
+    selectPlaceholder: "type of request"
 });
 }, 100)
 </script>

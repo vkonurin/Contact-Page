@@ -83,3 +83,5 @@ ul, ol {padding: 0; margin: 0; list-style-type: none;}
 .social ul li {display: inline-block; float: left;margin-right: 15px;}
 .social ul li a {display: block; color: #f9f9fa; transition: 0.3s;}
 .social ul li a:hover {color: #7dbd22;}
+
+.jq-selectbox li.disabled {display: none;}

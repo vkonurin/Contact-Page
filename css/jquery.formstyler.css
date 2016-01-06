@@ -1,6 +1,5 @@
 
 
-
 .jq-selectbox {
 	vertical-align: middle;
 	cursor: pointer;
@@ -33,7 +32,7 @@
 	width: 100%!important;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	padding: 9px;
+	padding: 9px 0;
 }
 .jq-selectbox .placeholder {
 	color: #888;
