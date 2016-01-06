@@ -8,7 +8,7 @@ $pswd='';
 $dbh = mysql_connect($host, $user, $pswd) or die("I can not connect to MySQL.");
 mysql_select_db($database) or die("I could not connect to database.");
 
-
+mysql_set_charset('utf8');
 $result_parse = mysql_query("SELECT * FROM mew");
 
  {
